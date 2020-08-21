@@ -1,0 +1,2 @@
+@reboot /usr/bin/screen -dmS exporter /usr/bin/python3 "/opt/mail/exporter.py"
+@reboot /usr/bin/screen -dmS exporter /usr/bin/python3 "/opt/mail/watch.py /var/log/mail.log status=bounced notify"
